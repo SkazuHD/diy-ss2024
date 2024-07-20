@@ -1,0 +1,45 @@
+
+.item-container{
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+.item{
+  color: white;
+  border-radius: 1.25rem;
+  padding: 1.25rem;
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+}
+.item-blob{
+  position: absolute;
+  display: grid;
+  place-items: center;
+  top: 0;
+  right: 0;
+  background: darkred;
+  border-radius: 100%;
+  width: 1.5rem;
+  aspect-ratio: 1/1;
+}
+.item-content{
+  display: grid;
+  place-items: center;
+  font-size: 2rem;
+}
+.item-1{
+  background: #39705d;
+}
+.item-2{
+  background: #034949;
+}
+.item-3{
+    background: #1c5a5a;
+}
+.item-4{
+    background: #24247a;
+}
+.item-5{
+background: cadetblue;
+}

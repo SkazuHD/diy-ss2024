@@ -1,0 +1,18 @@
+<h1>QUEUE</h1>
+<div class="item-container">
+  @for(queueItem of queue; track queueItem.type){
+  <div class="item item-{{queueItem.type}}">
+    <span class="item-content">
+      <span class="material-icons">{{getIcon(queueItem.type)}}</span>
+    </span>
+    <span class="item-blob">{{queueItem.count}}</span>
+  </div>
+  } @empty {
+    <h3>Nothing to show in the current Timeframe</h3>
+  }
+</div>
+<div class="item-container">
+<label>Timeframe</label>
+<input type="number" (change)="onThresholdChange(input.value)"  #input>
+  <button (click)="onClearQueue()" >Clear Queue</button>
+</div>

@@ -1,0 +1,9 @@
+POST http://192.168.4.1/4
+###
+GET http://192.168.4.1/queue
+
+###
+POST http://192.168.4.1/clear
+
+### Sample Queue
+POST http://192.168.4.1/4
